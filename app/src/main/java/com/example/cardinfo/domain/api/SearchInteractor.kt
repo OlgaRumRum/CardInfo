@@ -4,5 +4,5 @@ import com.example.cardinfo.domain.model.CardInfo
 import com.example.cardinfo.domain.model.Resource
 
 interface SearchInteractor {
-    suspend fun getBinInfo(number: String): Resource<CardInfo>
+    suspend fun getCardInfo(number: String): Resource<CardInfo>
 }

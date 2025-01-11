@@ -10,7 +10,7 @@ import com.example.cardinfo.domain.model.Resource
 class SearchRepositoryImpl(
     private val networkClient: NetworkClient
 ) : SearchRepository {
-    override suspend fun getBinInfo(number: String): Resource<CardInfo> {
+    override suspend fun getCardInfo(number: String): Resource<CardInfo> {
         val response = networkClient.doRequest(CardRequest(number))
 
         return if (response is CardResponse) {

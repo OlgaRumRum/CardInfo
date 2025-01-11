@@ -8,7 +8,7 @@ import com.example.cardinfo.domain.model.Resource
 class SearchInteractorImpl(
     private val repository: SearchRepository
 ) : SearchInteractor {
-    override suspend fun getBinInfo(number: String): Resource<CardInfo> {
-        return repository.getBinInfo(number)
+    override suspend fun getCardInfo(number: String): Resource<CardInfo> {
+        return repository.getCardInfo(number)
     }
 }
