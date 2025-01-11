@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/cardNumberLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/card_number"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardNumberTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="42743200" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lengthLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/length" />
+
+        <TextView
+            android:id="@+id/lengthTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/luhnLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/luhn" />
+
+        <TextView
+            android:id="@+id/luhnTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/schemeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/scheme" />
+
+        <TextView
+            android:id="@+id/schemeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="visa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/type" />
+
+        <TextView
+            android:id="@+id/typeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="debit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/brandLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/brand" />
+
+        <TextView
+            android:id="@+id/brandTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Visa_Dankort" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prepaidLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/prepaid" />
+
+        <TextView
+            android:id="@+id/prepaidTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/countryTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/country"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/countryNameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/countryNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Denmark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countryNumericLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/numeric" />
+
+        <TextView
+            android:id="@+id/countryNumericTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="208" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countryAlpha2LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/alpha2" />
+
+        <TextView
+            android:id="@+id/countryAlpha2Tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="DK" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countryEmojiLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/emoji" />
+
+        <TextView
+            android:id="@+id/countryEmojiTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="🇩🇰" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countryCurrencyLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/currency" />
+
+        <TextView
+            android:id="@+id/countryCurrencyTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="DKK" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countryLatitudeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/latitude" />
+
+        <TextView
+            android:id="@+id/countryLatitudeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="56" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countrylongitudeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/countryLongitudeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="10" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bankTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Bank"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/bankNameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Name" />
+
+        <TextView
+            android:id="@+id/bankNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Jyske_Bank" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bankUrlLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/URL" />
+
+        <TextView
+            android:id="@+id/bankUrlTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="www.jyskebank.dk" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bankPhoneLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Phone" />
+
+        <TextView
+            android:id="@+id/bankPhoneTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="+4589893300" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bankCityLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/City" />
+
+        <TextView
+            android:id="@+id/bankCityTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Moscow" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/errorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

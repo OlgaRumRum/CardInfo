@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">CardInfo</string>
+    <string name="search">Поиск</string>
+    <string name="history">История</string>
+    <string name="length">Length:</string>
+    <string name="luhn">Luhn:</string>
+    <string name="scheme">Scheme:</string>
+    <string name="type">Type:</string>
+    <string name="brand">Brand:</string>
+    <string name="prepaid">Prepaid:</string>
+    <string name="country">Country</string>
+    <string name="name">Name:</string>
+    <string name="numeric">Numeric:</string>
+    <string name="alpha2">Alpha2:</string>
+    <string name="emoji">Emoji:</string>
+    <string name="currency">Currency:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="Bank">Bank</string>
+    <string name="Name">Name:</string>
+    <string name="URL">URL:</string>
+    <string name="Phone">Phone:</string>
+    <string name="City">City:</string>
+    <string name="card_number">Card number: </string>
+    <string name="search_history_title">История поиска</string>
+    <string name="empty_history">История поиска отсутствует</string>
+    <string name="dialog_negative">Нет</string>
+    <string name="dialog_positive">Да</string>
+    <string name="dialog_title">Удалить информацию о карте?</string>
+    <string name="hint">Введите BIN номер, не менее 6 цифр</string>
 </resources>

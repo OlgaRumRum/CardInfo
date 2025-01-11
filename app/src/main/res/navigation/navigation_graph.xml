@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/cardSearchFragment">
+
+    <fragment
+        android:id="@+id/cardHistoryFragment"
+        android:name="com.example.cardinfo.ui.cardHistory.CardHistoryFragment"
+        android:label="fragment_card_history"
+        tools:layout="@layout/fragment_card_history" />
+    <fragment
+        android:id="@+id/cardSearchFragment"
+        android:name="com.example.cardinfo.ui.cardSearch.CardSearchFragment"
+        android:label="fragment_card_search"
+        tools:layout="@layout/fragment_card_search"></fragment>
+</navigation>
