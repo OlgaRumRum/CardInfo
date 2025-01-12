@@ -53,6 +53,7 @@ class CardSearchFragment : Fragment() {
 
     private fun renderState(state: CardSearchState) {
 
+        binding.progressBar.isVisible = state is CardSearchState.Loading
         binding.lengthLL.isVisible = state is CardSearchState.Content && state.data?.length != null
         binding.luhnLL.isVisible = state is CardSearchState.Content && state.data?.luhn != null
         binding.schemeLL.isVisible = state is CardSearchState.Content && state.data?.scheme != null
