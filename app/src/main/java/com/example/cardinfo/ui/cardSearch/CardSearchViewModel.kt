@@ -20,6 +20,7 @@ class CardSearchViewModel(
         get() = _screenState
 
     fun getCardInfo(number: String) {
+        _screenState.value = CardSearchState.Loading
         viewModelScope.launch {
             val result = searchInteractor.getCardInfo(number)
             successResult(result)
