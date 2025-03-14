@@ -21,7 +21,7 @@
     <string name="URL">URL:</string>
     <string name="Phone">Phone:</string>
     <string name="City">City:</string>
-    <string name="card_number">Card number: </string>
+    <string name="card_number">Card number</string>
     <string name="search_history_title">История поиска</string>
     <string name="empty_history">История поиска отсутствует</string>
     <string name="dialog_negative">Нет</string>
