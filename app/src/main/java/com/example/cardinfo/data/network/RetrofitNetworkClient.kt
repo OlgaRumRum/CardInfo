@@ -23,7 +23,6 @@ class RetrofitNetworkClient(
                     Response("400")
                 }
             } catch (e: Exception) {
-                e.message
                 Response(e.message.toString())
             }
         }
